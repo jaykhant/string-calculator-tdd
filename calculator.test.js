@@ -23,3 +23,7 @@ test('should return the sum of numbers with new line as delimiter', () => {
 test('should return the sum of numbers with custom delimiter', () => {
     expect(calculator('//;\n1;2')).toBe(3)
 })
+
+test('should throw an exception when negative numbers are used', () => {
+    expect(() => calculator('1,-2')).toThrow('Negatives not allowed: -2')
+})
