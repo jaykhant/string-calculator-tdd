@@ -27,3 +27,7 @@ test('should return the sum of numbers with custom delimiter', () => {
 test('should throw an exception when negative numbers are used', () => {
     expect(() => calculator('1,-2')).toThrow('Negatives not allowed: -2')
 })
+
+test('should ignore numbers greater than 1000', () => {
+    expect(calculator('1,2,1001')).toBe(3)
+})
