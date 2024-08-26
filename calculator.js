@@ -17,7 +17,7 @@ const calculator = (input) => {
         throw new Error(`Negatives not allowed: ${negatives.join(', ')}`)
     }
 
-    return numbers.reduce((sum, number) => sum + parseInt(number), 0)
+    return numbers.filter(number => parseInt(number) <= 1000).reduce((sum, number) => sum + parseInt(number), 0)
 }
 
 module.exports = calculator
