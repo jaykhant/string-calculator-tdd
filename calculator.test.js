@@ -1,5 +1,5 @@
 const calculator = require('./calculator');
 
-test('nothing', () => {
-    expect(calculator()).toBe(null);
-});
+test('should return 0 for an empty string', () => {
+    expect(calculator('')).toBe(0)
+})
