@@ -7,3 +7,7 @@ test('should return 0 for an empty string', () => {
 test('should return the number itself if there is only one number', () => {
     expect(calculator('5')).toBe(5)
 })
+
+test('should return the sum of two numbers', () => {
+    expect(calculator('1,2')).toBe(3)
+})
