@@ -1,0 +1,16 @@
+{
+  "name": "string-calculator-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
