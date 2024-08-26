@@ -1,7 +1,9 @@
 const calculator = (input) => {
     if (input === '') return 0
 
-    return parseInt(input)
+    const numbers = input.split(',')
+
+    return numbers.reduce((sum, number) => sum + parseInt(number), 0)
 }
 
 module.exports = calculator
